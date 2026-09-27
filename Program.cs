@@ -7,7 +7,8 @@ class Program
     static void Main()
     {
         int[] masive1 = {2,-2,3,-4,5};
-        int[] masive2 = {5,4,3,2,1}; // 2 масива
+        int[] masive2 = {2,-5,8,4,-1};
+        int[] masive3 = {5,4,3,2,1}; // 2 масива
 
         System.Console.WriteLine(Sum(masive1));
         System.Console.WriteLine(Sum(masive2));
