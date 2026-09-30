@@ -14,6 +14,6 @@ class Program
     {
         DayTime daytime = DayTime.Morning;
         if(daytime == DayTime.Morning) System.Console.WriteLine("Доброе утро");
-        else System.Console.WriteLine("Привет");
+        else if(daytime == DayTime.Night) System.Console.WriteLine("Ночь");
     }
 }
