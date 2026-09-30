@@ -3,25 +3,17 @@
 
 class Program
 {
+    enum DayTime
+    {
+        Morning, 
+        Afternoon, 
+        Evening, 
+        Night 
+    }
     static void Main()
     {
-        int[] massive = {1,2,3,4,5};
-        int[] massive2 = {0,1,2,3,4};
-
-        System.Console.WriteLine(Sum(massive));
-    }
-    static int Sum(int[] nums)
-    {
-       int result = 0;
-       int limit = 0;
-       foreach(int number in nums)
-        {
-            if(Isbooled(number, limit)) result += number;
-        }
-       return result;
-    }
-    static bool Isbooled(int nums, int limit)
-    {
-        return nums > limit;
+        DayTime daytime = DayTime.Morning;
+        if(daytime == DayTime.Morning) System.Console.WriteLine("Доброе утро");
+        else System.Console.WriteLine("Привет");
     }
 }
